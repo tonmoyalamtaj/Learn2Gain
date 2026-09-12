@@ -1,5 +1,6 @@
 # LEARN2GAIN TAT
 #### Video Demo:  <https://www.youtube.com/watch?v=gT7g1iAgad4>
+#### Usable Version: <https://learn2gain.onrender.com>
 #### Description:
 Learn2Gain is a centralized web platform designed to help learners easily discover top-tier, free certificate courses from renowned platforms like CS50, Kaggle, Cisco etc. The web app features an interactive display of courses, direct enrollment links, an embedded portfolio, and an integrated AI Assistant (powered by Groq) to guide users through the platform.
 
