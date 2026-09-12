@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <title>Courses</title>
+    </head>
+    <body>
+        <header>
+        <nav class="navstyle">
+            <a class="allber" href="{{ url_for('index') }}">About Me</a>
+            <div>
+                <input type="text" id = "search" placeholder="Search your courses">
+            </div>
+            <a class="Homeber" href="{{ url_for('ai_assitant') }}">AI Assistant</a>
+        </nav>
+        </header>
+        <main>
+            <section>
+                <div class="course-container" id="courseList">
+                    {% for course in courses %}
+                    <div class="course-card">
+                        <!-- course Photo -->
+                        <img class="card-img" src="{{ course.imgSrc }}"
+                        alt="{{ course.alt }}">
+                        <br>
+                        <!-- certificate photo -->
+                        <a href="{{ course.courseLink }}" target="_blank">
+                            <img src = "{{ course.certificate }}" class="card-img">
+                        </a>
+                        <h3>{{ course.courseName }}</h3>
+                        <p>{{ course.description }}</p>
+                        <p>By <a href="{{ course.orgLink }}">{{ course.orgName }}</a></p>
+                        <a href="{{ course.courseLink }}" class="Homeber" target="_blank" style="text-align: center;">Enroll Now</a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+        </main>
+        <script>
+            document.getElementById('search').addEventListener('input', function() 
+            {
+                let filterValue = this.value.toLowerCase().trim();
+                let courseCards = document.querySelectorAll('.course-card');
+
+                courseCards.forEach(function(card) 
+                {
+                    let img = card.querySelector('.card-img');
+                    let altText = img ? img.getAttribute('alt').toLowerCase() : '';
+                    if (altText.includes(filterValue)) 
+                    {
+                        card.style.display = '';
+                    } 
+                    else 
+                    {
+                        card.style.display = 'none';
+                    }
+                }
+            );
+            }
+        );
+        </script>
+    </body>
+    </body>
+</html>

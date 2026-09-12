@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>About Taj</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navstyle">
+            <div>
+                <a href="{{ url_for('freecoursewithcertificate') }}" class="allber">Back</a>
+                <a href="{{ url_for('index') }}" class="allber">Home</a>
+                <a href="{{ url_for('about') }}" class="Homeber">About</a>
+                <a href="{{ url_for('hobbies') }}" class="allber">Hobbies</a>
+                <a href="{{ url_for('contact') }}" class="allber">Contact</a>
+                <a class="Homeber" href="{{ url_for('ai_assitant') }}">AI Assistant</a>
+            </div>
+        </nav>
+     </header>
+    <main>
+        <section>
+            <h1>About Me</h1>
+            <p>
+                Hello! I am Md. Tonmoy Alam Taj, a student with a strong curiosity about how things work around us. I enjoy exploring new ideas, diving into technology, and taking on creative challenges. Whether it's learning computer science through CS50x or picking up a new skill on my own, I am always eager to expand my knowledge. In my free time, I like to explore new ideas, which helps me stay inspired and creative. I am continuously learning along the way. Welcome to my website, and feel free to explore my journey!
+            </p>
+
+            <h2>Personal information</h2>
+            <table class="table table-bordered table-striped table-hover">
+                <tbody>
+                    <tbody>
+            <tr>
+                <th>Full Name</th>
+                <td>Md. Tonmoy Alam Taj</td>
+            </tr>
+            <tr>
+                <th>Date of Birth</th>
+                <td>17 November 2009</td>
+            </tr>
+            <tr>
+                <th>Home District</th>
+                <td><a href="https://en.wikipedia.org/wiki/Satkhira_District">Shatkhira , Khulna, Bangladesh</a></td>
+            </tr>
+            <tr>
+                <th>Current Location</th>
+                <td><a href="https://en.wikipedia.org/wiki/Dhaka">Dhaka, Bangladesh</a></td>
+            </tr>
+            <tr>
+                <th>Current Academic Level</th>
+                <td><a href="https://en.wikipedia.org/wiki/Higher_Secondary_Certificate">HSC 1st year</a></td>
+            </tr>
+            <tr>
+                <th>Current Focus</th>
+                <td><a href="https://cs50.harvard.edu/x/">Completing CS50x</a> (According to 3 September 2026)</td>
+            </tr>
+            <tr>
+                <th>School Name</th>
+                <td><a href="https://nahs1973.edu.bd/acknowledgment.php">Nahar Academy High School</a></td>
+            </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <title>
+            Assistant AI
+        </title>
+    </head>
+    <body style="background-color: rgb(129, 129, 255);">
+        <header>
+            <h1>Your AI Assistant</h1>
+            <nav class="navstyle">
+                <div>
+                    <br>
+                    <a href="{{ url_for('clear_chat') }}">
+                        <button type="button" style="background-color: red; color: white;">Clear Chat</button>
+                    </a>
+                    <a href="{{ url_for('freecoursewithcertificate') }}" class="allber">Back</a>
+                    <a href="{{ url_for('index') }}" class="Homeber">Home</a>
+                    <a href="{{ url_for('about') }}" class="allber">About</a>
+                    <a href="{{ url_for('hobbies') }}" class="allber">Hobbies</a>
+                    <a href="{{ url_for('contact') }}" class="allber">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <div>
+                {% for msg in messege %}
+                {% if msg.role == 'user' %}
+                    <p><b>You:</b> {{ msg.content }}</p>
+                {% else %}
+                    <p><b>AI:</b> {{ msg.content }}</p>
+                {% endif %}
+                {% else %}
+                    <p>No messages yet. Ask something!</p>
+                {% endfor %}
+                </div>
+                <hr>
+                <form action="{{ url_for('ai_assitant') }}" method="POST" class="aesthetic-container">
+                    <input type="text" name="messege" class="aesthetic-input" placeholder="Type your message..." required autocomplete="off">
+                    <button type="submit" class="aesthetic-button">Send</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

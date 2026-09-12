@@ -1,0 +1,88 @@
+.navstyle {
+    display: flex;
+    background-color: gray;
+    border: 1px;
+    border-radius: 5px;
+    border-color: white;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Homeber {
+    background-color: blue;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px;
+    border-color: black;
+    text-decoration: none;
+    color: white;   
+}
+
+.allber {
+    background-color: gray;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px;
+    text-decoration: none;
+    color: white;
+    border-color: black;
+}
+
+.circle-photo {
+    border-radius: 50%;
+}
+
+.course-card {
+    border: 1px
+    solid #ccc;
+    padding: 15px;
+    width: 200px;
+    border-radius: 8px;
+}
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.course-card img 
+{
+    width: 100%;           
+    height: 200px;         
+    object-fit: contain;
+}
+
+.aesthetic-container {
+    max-width: 650px;
+    margin: 20px auto;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.aesthetic-input {
+    flex: 1;
+    padding: 14px 22px;
+    font-size: 15px;
+    color: gray;
+    background: white;
+    border: none;
+    border-radius: 28px;
+    outline: none;
+}
+
+.aesthetic-button {
+    padding: 14px 26px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background: blue;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+}

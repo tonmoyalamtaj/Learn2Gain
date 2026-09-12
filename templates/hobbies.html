@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Taj Hobbies</title>
+</head>
+
+<body>
+   <header>
+        <nav class="navstyle">
+            <div>
+                <a href="{{ url_for('freecoursewithcertificate') }}" class="allber">Back</a>
+                <a href="{{ url_for('index') }}" class="allber">Home</a>
+                <a href="{{ url_for('about') }}" class="allber">About</a>
+                <a href="{{ url_for('hobbies') }}" class="Homeber">Hobbies</a>
+                <a href="{{ url_for('contact') }}" class="allber">Contact</a>
+                <a class="Homeber" href="{{ url_for('ai_assitant') }}">AI Assistant</a>
+            </div>
+        </nav>
+     </header>
+    <main>
+        <section>
+            <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+                <div class="col-lg-6 px-0">
+                    <h1 class="display-4 fst-italic">My Hobbies</h1>
+                    <p class="lead my-3">There Are some of my favourite Hobbies</p>
+                    <p class="lead mb-0 text-body-emphasis fw-bold"><u>Continue reading...</u></p>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static"> <strong
+                                class="d-inline-block mb-2 text-primary-emphasis">Programming</strong>
+                            <h3 class="mb-0">Specially</h3>
+                            <p class="card-text mb-auto">I love Specially some programming language like JavaScript, Python, C etc.In my free time I try to solve some problem by using this languages.</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static"> <strong
+                                class="d-inline-block mb-2 text-primary-emphasis">Reading Books</strong>
+                            <h3 class="mb-0">Specially</h3>
+                            <p class="card-text mb-auto">I love Specially some books about Religious, History, Science Fiction, Novels, Techonology etc.</p>
+                        </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
